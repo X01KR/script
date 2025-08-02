@@ -42,12 +42,8 @@ warn() {
   echo "$1"
 }
 
-# Find a source mirror near you which supports rsync on
-# https://launchpad.net/ubuntu/+cdmirrors
-# rsync://<iso-country-code>.rsync.releases.ubuntu.com/releases should always work
 RSYNCSOURCE=rsync://ftp.kaist.ac.kr/ubuntu-cd
 
-# Define where you want the mirror-data to be on your mirror
 BASEDIR=/mirror/ubuntu-releases
 
 if [ ! -d ${BASEDIR} ]; then
