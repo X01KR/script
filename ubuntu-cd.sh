@@ -1,5 +1,6 @@
-#! /bin/bash
+#!/bin/bash
 
+apt update
 apt install rsync nginx -y
 
 rm /etc/nginx/sites-available/default
