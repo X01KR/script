@@ -1,4 +1,4 @@
-#/bin/dash
+#!/bin/bash
 
 fatal() {
   echo "$1"
