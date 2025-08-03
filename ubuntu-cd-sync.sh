@@ -26,4 +26,5 @@ rsync --verbose --recursive --times --links --safe-links --hard-links \
   --stats --delete-after \
   ${RSYNCSOURCE} ${BASEDIR} || fatal "Failed to rsync from ${RSYNCSOURCE}."
 
+mkdir -p ${BASEDIR}/.trace
 date -u > ${BASEDIR}/.trace/$(hostname -f)
