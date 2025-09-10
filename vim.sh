@@ -16,7 +16,7 @@ chown $ACTUAL_USER:$ACTUAL_USER /mirror/vim
 cd /data/mirror/script
 
 echo "Downloading syncing script..."
-wget -O ubuntu-cd-sync.sh https://raw.githubusercontent.com/x01kr/script/main/vim-sync.sh
+wget -O vim-sync.sh https://raw.githubusercontent.com/x01kr/script/main/vim.sh
 
 echo "Changing Permission for syncing script..."
 chmod +x vim-sync.sh
